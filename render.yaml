@@ -2,9 +2,9 @@ services:
   - type: web
     name: rvc-webui
     env: python
-    repo: https://github.com/yourusername/RVC-WebUI
+    repo: https://github.com/samudhan2008/RVC-WebUI
     buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
+    startCommand: python infer-web.py
     envVars:
       - key: PORT
         value: 8000
