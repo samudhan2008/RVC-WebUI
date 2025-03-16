@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: rvc-webui
+    env: python
+    repo: https://github.com/yourusername/RVC-WebUI
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: CUDA_VISIBLE_DEVICES
+        value: 0
